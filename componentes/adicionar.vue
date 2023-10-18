@@ -10,6 +10,6 @@ export default {
 .adc{
   position: absolute;
   margin-left: 1150px;
-  margin-top: 56px;
+  margin-top: 56px;/*acres*/
 }
 </style>
