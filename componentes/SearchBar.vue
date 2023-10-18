@@ -31,38 +31,48 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .f{
   position:absolute;
   margin-left: 200px;
-  margin-top: 78px;
-  border-radius: 8px;
-  border: 2px solid #B2D2B7;
+  margin-top: 45px;
+  border-radius: 10px;
+  border: 2.5px solid #B2D2B7;
   width: 485px;
   height: 39px;
+}
+.f:hover{
+  cursor: pointer;
 }
 .legenda{
   color: #9AB69E;
   font-family: Poppins;
-  font-size: 11px;
+  font-size: 13px;
   font-style: normal;
-  font-weight: 590;
+  font-weight: 500;
   line-height: normal;
+  margin-left: 6px;
 }
 .placeholder{
   color: #9AB69E;
   font-family: Poppins;
   font-size: 15px;
   font-style: normal;
-  font-weight: 590;
+  font-weight: 500;
   line-height: normal;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 5px;
+}
+.placeholder:hover{
+  cursor: pointer;
 }
 .ft{
   position: absolute;
-  margin-left: 460px;
-  margin-top: 12px;
-  width: 16px;
-  height: 18.215px;
+  margin-left: 455px;
+  margin-top: 0px;
+  width: 17.5px;
+  height: 20px;
   flex-shrink: 0;
   }
 

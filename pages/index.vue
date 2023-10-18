@@ -15,6 +15,7 @@ import bloco from '~/componentes/bloco.vue'
 import adicionar from '~/componentes/adicionar.vue'
 import caminhoDaImagem from '~/assets/Foto.png'
 import SearchBar from "~/componentes/SearchBar.vue"
+import port from "~/componentes/th.jpg"
 export default {
   components: {
     bloco,
@@ -28,12 +29,12 @@ export default {
       abre: "Abreviação: L. L. Prog",
       niv: "Nível: Técnico Integrado",
 
-      caminhoDaImagem2: "https://picsum.photos/200/300",
+      caminhoDaImagem2: "https://tse1.mm.bing.net/th?id=OIP.lKoTmKPpWT-qSlTLmlIwwgHaEK&pid=Api&P=0&h=180",
       mensagemDoPai2: "Matemática", // Defina o valor da prop aqui
       abre2: "Abreviação: Mat",
       niv2: "Nível: Técnico Integrado",
 
-      caminhoDaImagem3: "https://picsum.photos/200/300",
+      caminhoDaImagem3: "https://tse4.mm.bing.net/th?id=OIP.-eVHxNSXqiqHdFy8tlPlJAHaFj&pid=Api&P=0&h=180",
       mensagemDoPai3: "Português", // Defina o valor da prop aqui
       abre3: "Abreviação: Port",
       niv3: "Nível: Técnico Integrado",
