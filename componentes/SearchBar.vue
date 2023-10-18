@@ -1,13 +1,10 @@
 <template>
   <div class="search-bar">
-    <input
-    id="name"
-      type="text"
-      v-model="searchQuery"
-      @input="handleInput"
-      placeholder="Procure uma disciplina"
-    />
-    <img class="ft" src="~/assets/search.jpg">
+    <fieldset class="f">
+      <legend class="legenda">Pesquisar</legend>
+      <p class="placeholder">Procure uma disciplina</p>
+      <img class="ft" src="~/assets/search.jpg">
+    </fieldset>
   </div>
 </template>
 
@@ -35,36 +32,39 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap');
-.search-bar {
-  position: absolute;
-  display: flex;
+.f{
+  position:absolute;
   margin-left: 200px;
   margin-top: 78px;
-}
-
-input[type="text"] {
   border-radius: 8px;
   border: 2px solid #B2D2B7;
   width: 485px;
   height: 39px;
 }
-::-webkit-input-placeholder{
+.legenda{
   color: #9AB69E;
   font-family: Poppins;
-  font-size: 11.287px;
+  font-size: 11px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 590;
+  line-height: normal;
+}
+.placeholder{
+  color: #9AB69E;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 590;
   line-height: normal;
 }
 .ft{
   position: absolute;
   margin-left: 460px;
   margin-top: 12px;
-  width: 14px;
+  width: 16px;
   height: 18.215px;
   flex-shrink: 0;
   }
-  textarea:focus, input:focus, select:focus {
-    outline: 0;
-}
+
 </style>
+
