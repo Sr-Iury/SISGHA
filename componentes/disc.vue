@@ -1,21 +1,21 @@
 <script setup>
 const props = defineProps({
-  imagemSrc: String,
-  mensagem: String,
-  abreviacao: String,
-  nivel : String,
+  imgSr: String,
+  sala: String,
+  curso: String,
+  turno: String,
 })
 
-const { imagemSrc, mensagem, abreviacao, nivel } = props;
+const { imgSr, sala, curso, turno } = props;
 </script>
 
 <template class="tudo">
   <div class="pai">
-    <img class="img" :src="imagemSrc"/>
-    <div class="titulo"><b>{{ mensagem }}</b></div>
-    <div class="abreviação">{{ abreviacao }}</div>
-    <div class="nível">{{ nivel }}</div>
-    <img class="ft" src="~assets/Editar.png">
+    <img class="lapis" src="~/assets/Edit.jpg">
+    <img class="img" :src="imgSr"/>
+    <div class="titulo"><b>{{ sala }}</b></div>
+    <div class="abreviação">{{ curso }}</div>
+    <div class="nível">{{ turno }}</div>
   </div>
 </template>
 
@@ -33,58 +33,53 @@ export default {
 }
 .pai{
   width: 487px;
-  height: 239px;
+  height: 106px;
   flex-shrink: 0;
   border-radius: 8px;
-  border: 1.5px solid #9AB69E;
+  border: 2.3px solid #B2D2B7;
   background: #FFF;
 }
 .img{
-  width: 487px;
-  height: 120px;
+  width: 106px;
+  height: 106px;
   flex-shrink: 0;
 }
 .titulo{
   position: absolute;
-  margin-left: 20px;
+  margin-left: 130px;
   font-family: Poppins;
-  font-size: 15.107px;
+  font-size: 18.884px;
   font-weight: bold;
   font-style: normal;
   font-weight: 900;
   line-height: bold;
-  margin-top: 15px;
+  margin-top: -95px;
 }
 .abreviação{
-  position: absolute;
-  margin-left: 20px;
+  color: #7C9C81;
   font-family: Poppins;
   font-size: 15.107px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  color: #9AB69E;
-  margin-top: 50px;
+  margin-top: -67px;
+  margin-left: 130px;
 }
 .nível{
-  position: absolute;
-  margin-left: 20px;
+  color: #7C9C81;
   font-family: Poppins;
   font-size: 15.107px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  color: #9AB69E;
-  margin-top: 70px;
+  margin-top: 0px;
+  margin-left: 130px;
 }
 .img{
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px 0px 0px 8px;
 }
-.ft{
+.lapis{
   position: absolute;
-  margin-left: -45px;
-  margin-top: 140px;
-  width: 30px;
-  height: 30px;
+  margin-top: -900px;
 }
 </style>

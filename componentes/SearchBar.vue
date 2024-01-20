@@ -1,9 +1,16 @@
+<script setup>
+const props = defineProps({
+  msge: String,
+})
+
+const { msge } = props;
+</script>
 <template>
   <div class="search-bar">
     <fieldset class="f">
       <legend class="legenda">Pesquisar</legend>
-      <p class="placeholder">Procure uma disciplina</p>
-      <img class="ft" src="~/assets/search.jpg">
+      <p class="placeholder">{{ msge }}</p>
+      <img class="ft" src="~/assets/Pesquisar.png">
     </fieldset>
   </div>
 </template>
@@ -61,7 +68,7 @@ export default {
   font-weight: 500;
   line-height: normal;
   position: absolute;
-  margin-top: 0px;
+  margin-top: -2px;
   margin-left: 5px;
 }
 .placeholder:hover{
@@ -70,9 +77,9 @@ export default {
 .ft{
   position: absolute;
   margin-left: 455px;
-  margin-top: 0px;
-  width: 17.5px;
-  height: 20px;
+  margin-top: -2px;
+  width: 20px;
+  height: 23px;
   flex-shrink: 0;
   }
 
